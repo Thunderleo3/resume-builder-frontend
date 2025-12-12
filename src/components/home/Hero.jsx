@@ -186,6 +186,7 @@ const Hero = () => {
           <div className="flex items-center gap-4 ">
             <Link
               type="/app"
+              to="/app?state=register"
               className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
             >
               Get started
