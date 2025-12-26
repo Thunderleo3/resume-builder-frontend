@@ -42,7 +42,7 @@ const ExperienceForm = ({ data, onChange }) => {
         { userContent: prompt },
         { headers: { Authorization: token } }
       );
-      updateExperience(index, "description", data.enhandecContent);
+      updateExperience(index, "description", data.enhancedContent);
     } catch (error) {
       console.error(error.message);
     } finally {
