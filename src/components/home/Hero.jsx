@@ -8,11 +8,10 @@ const Hero = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const logos = [
-    "https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/framer.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg",
+    "/logos/instagram.svg",
+    "/logos/microsoft.svg",
+    "/logos/google.svg",
+    "/logos/spotify.svg",
   ];
 
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
       <div className="min-h-screen pb-20">
         {/* Navbar */}
         <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
-          <a href="https://prebuiltui.com">
+          <a href="/">
             <img src="/logo.svg" alt="logo" className="h-11 w-auto" />
           </a>
 
@@ -233,7 +232,7 @@ const Hero = () => {
           </p>
 
           <div
-            className="flex flex-wrap justify-between max-sm:justify-center gap-6 max-w-3xl w-full mx-auto py-4"
+            className="flex flex-wrap justify-between max-sm:justify-center gap-4 max-w-3xl w-full mx-auto py-4"
             id="logo-container"
           >
             {logos.map((logo, index) => (
@@ -241,7 +240,7 @@ const Hero = () => {
                 key={index}
                 src={logo}
                 alt="logo"
-                className="h-6 w-auto max-w-xs"
+                className="h-8 w-auto max-w-xs"
               />
             ))}
           </div>
